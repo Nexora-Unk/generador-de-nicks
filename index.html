@@ -49,36 +49,41 @@ details ul{margin:10px 0 0;padding-left:20px;color:var(--mu)}
 #toast.s{opacity:1}
 :focus-visible{outline:2px solid var(--ac2);outline-offset:2px}.pv{margin:0 0 12px}.cp{margin-top:6px;font-size:12px;color:var(--mu)}.kf{position:relative;height:190px;border-radius:12px;overflow:hidden;background:var(--s)}.kk{position:absolute;display:flex;flex-direction:column;gap:4px;padding:10px;padding-bottom:var(--pb,10px);max-width:100%}.kf.tl .kk{top:0;left:0;align-items:flex-start}.kl em{font-style:normal;color:var(--ea)}.kl u{text-decoration:none;color:var(--eb)}.ag{width:18px;height:18px;border-radius:2px;background:linear-gradient(135deg,#37d4a6,#1b7a66)}.ag.e{background:linear-gradient(135deg,#ff7a85,#9c2432)}.bn{position:absolute;left:0;right:0;bottom:14px;text-align:center;font:800 15px system-ui;color:#fff;text-shadow:0 2px 4px #000}.bn small{font-size:12px;opacity:.9}.hb{position:absolute;left:50%;bottom:6px;width:190px;height:22px;transform:translateX(-50%);background:repeating-linear-gradient(90deg,#8b8b8b 0 20px,#373737 20px 22px);border:2px solid #373737}.kf.r .kk{top:0;right:0;align-items:flex-end}.kf.l .kk{bottom:0;left:0;align-items:flex-start}.kf.c .kk{top:0;left:0;right:0;align-items:center}.kl{display:flex;gap:7px;align-items:center;padding:4px 10px;background:var(--b);border-radius:var(--r);font:var(--f);color:var(--c,#fff);max-width:100%;overflow-wrap:anywhere;text-shadow:var(--ts,0 1px 2px #0008)}.kl s{text-decoration:none;opacity:.85;font-size:.85em;padding:0 6px;border-left:1px solid #fff5;border-right:1px solid #fff5}.kl.you{outline:2px solid var(--y);background:var(--yb)}.sy{display:flex;flex-wrap:wrap;gap:6px;grid-column:1/-1;align-items:center}.sy button{min-width:40px;height:40px;font-size:18px;background:var(--card);border:1px solid var(--bd);border-radius:8px;cursor:pointer}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.w{max-width:1180px}.stats{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.stats span{font-size:12px;padding:3px 10px;border:1px solid var(--bd);border-radius:999px;color:var(--mu);background:var(--card)}
+.layout{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}.res{scroll-margin-top:8px;min-width:0}
+@media(min-width:900px){.layout{grid-template-columns:350px minmax(0,1fr);gap:20px;align-items:start}#ctl{position:sticky;top:14px}.pv{position:sticky;top:10px;z-index:4;background:var(--bg);padding:2px 0 8px}.tabs{margin-top:0}}
+.tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:4px;margin-top:0}.tabs::-webkit-scrollbar{display:none}.tab{white-space:nowrap;min-height:40px;flex:none}
+select,input[type=text]{font-size:16px;min-height:44px}.g{grid-template-columns:1fr 1fr}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.ck{background:var(--bg);border:1px solid var(--bd);border-radius:999px;padding:8px 13px;cursor:pointer;min-height:40px;font-size:14px}.ck:has(input:checked){border-color:var(--ac2);background:var(--soft)}.ck input{accent-color:#b052f5}
+details.adv{margin-top:12px;border:1px solid var(--bd);border-radius:12px;padding:10px 12px;background:transparent}details.adv summary{color:var(--mu)}details.adv .g{margin-top:12px}
+.actions{display:flex;gap:10px;margin-top:14px}.actions .go{flex:1}.go{min-height:48px}.actions .ic{min-height:48px}
+#out{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}.c{transition:border-color .15s;animation:in .25s both}.c:hover{border-color:var(--ac2)}.t{cursor:pointer}.b{width:40px;height:40px}
+@keyframes in{from{opacity:0;transform:translateY(6px)}}
+footer{margin-top:28px;text-align:center;color:var(--mu);font-size:13px}footer a{color:var(--ac);text-decoration:none}
+@media(max-width:899px){.actions{position:fixed;left:0;right:0;bottom:0;margin:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:#03040af2;backdrop-filter:blur(10px);border-top:1px solid #a050f040;z-index:30}.w{padding-bottom:96px}#toast{bottom:calc(90px + env(safe-area-inset-bottom,0px))}}
+@media(max-width:560px){#out{grid-template-columns:1fr}.kf{height:170px}.panel{padding:16px 14px}}
+@media(max-width:360px){.g{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.c{animation:none}}
+
+.top div{max-width:1180px}.t{overflow-wrap:break-word;word-break:normal;hyphens:none}.l{font-size:11px}
+#out{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+#ctl>.g{grid-template-columns:1fr}
+@media(min-width:900px){.layout{grid-template-columns:380px minmax(0,1fr)}}
+@media(max-width:560px){#out{grid-template-columns:1fr}}
 </style></head><body><nav class="top"><div><a class="brand" href="https://nexoraunktools.blogspot.com" aria-label="Ir a la página principal de Nexora"><b>NEX<i>ORA</i></b><small>Tools &amp; Resources</small></a></div></nav><div class="w">
 <header><div><h1>Generador de <em>nombres gamer</em></h1>
-<p class="sub">Nicks para Free Fire y otros juegos: elegí el juego, el estilo y copiá. Respeta el límite de caracteres de cada uno.</p></div>
+<p class="sub">Nicks para Free Fire y otros juegos: elegí el juego, el estilo y copiá. Respeta el límite de caracteres de cada uno.</p><div class="stats"><span>12 juegos</span><span>11 estilos</span><span>13 fuentes</span><span>20 marcos</span><span>Vista previa de la kill</span></div></div>
 </header>
 
-<section class="panel">
-<div class="g">
-<label>Juego<select id="game"></select></label>
-<label>Estilo de palabras<select id="theme">
-<option value="mix">Mezcla de todo</option><option value="pro">Pro y tryhard</option><option value="epico">Épico</option><option value="oscuro">Oscuro</option><option value="anime">Anime y otaku</option><option value="gracioso">Gracioso</option><option value="militar">Militar</option><option value="fantasia">Fantasía</option><option value="latino">Latino</option><option value="cyber">Cyber y neón</option><option value="lindo">Lindo y suave</option><option value="futbol">Fútbol</option></select></label>
-<label>Letras<select id="case"><option value="">Como salga</option><option value="up">MAYÚSCULAS</option><option value="low">minúsculas</option></select></label>
-<label>Fuente especial<select id="fx"></select></label>
-<label>Marco decorativo<select id="dc"></select></label>
-<label>Cantidad<select id="qty"><option>12</option><option selected>24</option><option>48</option></select></label><label>Largo máximo<select id="mx"><option value="0">Según el juego</option><option>6</option><option>8</option><option>10</option><option>12</option><option>16</option></select></label><label>Empieza con la letra<select id="st"><option value="">Cualquiera</option></select></label><label>Tu palabra va<select id="ps"><option value="r">Al azar</option><option value="s">Al inicio</option><option value="e">Al final</option></select></label>
-</div>
-<div class="g" style="margin-top:12px"><label>Tu palabra o nombre base (opcional, también se usa en "Estilizar")<input type="text" id="kw" maxlength="40" placeholder="Ej: Nexora"></label></div>
-<div class="row">
-<label class="ck"><input type="checkbox" id="num">Agregar números</label>
-<label class="ck"><input type="checkbox" id="leet">Cambiar letras por números (l33t)</label><label class="ck"><input type="checkbox" id="tg">Agregar #TAG (Riot)</label>
-<button class="go" id="run">Generar</button><button class="ic" id="sur">Sorpréndeme</button></div>
-<div class="note" id="info"></div><div class="row"><label>Fondo propio para la vista previa (captura de tu juego)<input type="file" id="ub" accept="image/*"></label><label>Ícono de arma propio (PNG)<input type="file" id="uw" accept="image/*"></label><button class="ic" id="ur">Quitar imágenes</button></div>
-</section>
-
-<div class="tabs" role="tablist">
+<main class="layout"><aside><section class="panel" id="ctl"><div class="g"><label>Juego<select id="game"></select></label><label>Estilo de palabras<select id="theme">
+<option value="mix">Mezcla de todo</option><option value="pro">Pro y tryhard</option><option value="epico">Épico</option><option value="oscuro">Oscuro</option><option value="anime">Anime y otaku</option><option value="gracioso">Gracioso</option><option value="militar">Militar</option><option value="fantasia">Fantasía</option><option value="latino">Latino</option><option value="cyber">Cyber y neón</option><option value="lindo">Lindo y suave</option><option value="futbol">Fútbol</option></select></label></div><div style="margin-top:12px"><label>Tu palabra o nombre base (opcional, también se usa en "Estilizar")<input type="text" id="kw" maxlength="40" placeholder="Ej: Nexora"></label></div><div class="chips"><label class="ck"><input type="checkbox" id="num">Agregar números</label><label class="ck"><input type="checkbox" id="leet">Cambiar letras por números (l33t)</label><label class="ck"><input type="checkbox" id="tg">Agregar #TAG (Riot)</label></div><details class="adv"><summary>Más opciones</summary><div class="g"><label>Letras<select id="case"><option value="">Como salga</option><option value="up">MAYÚSCULAS</option><option value="low">minúsculas</option></select></label><label>Fuente especial<select id="fx"></select></label><label>Marco decorativo<select id="dc"></select></label><label>Cantidad<select id="qty"><option>12</option><option selected>24</option><option>48</option></select></label><label>Largo máximo<select id="mx"><option value="0">Según el juego</option><option>6</option><option>8</option><option>10</option><option>12</option><option>16</option></select></label><label>Empieza con la letra<select id="st"><option value="">Cualquiera</option></select></label><label>Tu palabra va<select id="ps"><option value="r">Al azar</option><option value="s">Al inicio</option><option value="e">Al final</option></select></label></div><div class="g" style="margin-top:12px"><label>Fondo propio para la vista previa (captura de tu juego)<input type="file" id="ub" accept="image/*"></label><label>Ícono de arma propio (PNG)<input type="file" id="uw" accept="image/*"></label></div><button class="ic" id="ur" style="margin-top:10px">Quitar imágenes</button></details><div class="note" id="info"></div><div class="actions"><button class="go" id="run">Generar</button><button class="ic" id="sur">Sorpréndeme</button></div></section></aside><section class="res"><div class="tabs" role="tablist">
 <button class="tab" role="tab" data-tab="name" aria-selected="true">Nombres</button>
 <button class="tab" role="tab" data-tab="clan" aria-selected="false">Clanes y escuadrones</button>
 <button class="tab" role="tab" data-tab="style" aria-selected="false">Estilizar mi nombre</button>
 <button class="tab" role="tab" data-tab="sym" aria-selected="false">Símbolos</button><button class="tab" role="tab" data-tab="chk" aria-selected="false">Revisar compatibilidad</button><button class="tab" role="tab" data-tab="bio" aria-selected="false">Frases para el perfil</button><button class="tab" role="tab" data-tab="fav" aria-selected="false">Favoritos <span id="fc">0</span></button></div>
 <div class="bar" id="bar"></div>
-<div class="pv" id="pv" hidden></div><div id="out" aria-live="polite"></div>
+<div class="pv" id="pv" hidden></div><div id="out" aria-live="polite"></div></section></main>
 
 <details><summary>Ideas y consejos para elegir tu nombre</summary><ul>
 <li>Los límites de cada juego son aproximados y pueden cambiar con las actualizaciones. Si el juego rechaza un símbolo, probá otro marco o una fuente distinta.</li>
@@ -88,7 +93,7 @@ details ul{margin:10px 0 0;padding-left:20px;color:var(--mu)}
 <li>No uses datos personales (nombre real, edad, escuela) en tu nick.</li>
 <li>Usá el mismo nombre base en todos tus juegos y redes para que te reconozcan.</li>
 <li>En Roblox, Minecraft, Valorant, LoL y Among Us se usan solo letras, números y guion bajo, así que los marcos y fuentes se desactivan.</li>
-</ul></details>
+</ul></details><footer>Hecho con ♥ por <a href="https://nexoraunktools.blogspot.com">Nexora</a> · Tools &amp; Resources</footer>
 </div><noscript><p style="padding:20px;text-align:center">Activá JavaScript para usar el generador.</p></noscript><div id="toast"></div>
 
 <script>
@@ -209,7 +214,7 @@ if(b.dataset.f!=null){const t=cur[b.dataset.f],i=favs.indexOf(t);i<0?favs.push(t
 $('#bar').addEventListener('click',e=>{if(e.target.id==='ca')copy(favs.join('\n'));if(e.target.id==='cl'&&favs.length){favs=[];save();cur=[];render()}});
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x===b));cur=[];tab==='fav'?render():run()});
 $('#game').onchange=()=>{info();run()};['theme','case','fx','dc','qty','num','leet'].forEach(i=>$('#'+i).onchange=run);
-$('#run').onclick=run;$('#kw').addEventListener('keydown',e=>{if(e.key==='Enter')run()});
+const go=()=>{run();if(matchMedia('(max-width:899px)').matches)$('.res').scrollIntoView({behavior:'smooth',block:'start'})};$('#run').onclick=go;$('#kw').addEventListener('keydown',e=>{if(e.key==='Enter')run()});
 
-'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(l=>$('#st').add(new Option(l,l)));$('#st').onchange=$('#mx').onchange=$('#ps').onchange=$('#tg').onchange=run;loadS();SAVE.forEach(i=>$('#'+i).addEventListener('change',saveS));$('#kw').addEventListener('input',saveS);$('#sur').onclick=()=>{['theme','fx','dc','case'].forEach(i=>{const s=$('#'+i);if(!s.disabled)s.value=R([...s.options]).value});saveS();run()};const rd=(id,set)=>$(id).onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{set(r.result);toast('Imagen cargada');pv(cur[0])};r.readAsDataURL(f)};rd('#ub',v=>UB=v);rd('#uw',v=>UW=v);$('#ur').onclick=()=>{UB=UW='';$('#ub').value=$('#uw').value='';pv(cur[0])};info();run();
+'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(l=>$('#st').add(new Option(l,l)));$('#st').onchange=$('#mx').onchange=$('#ps').onchange=$('#tg').onchange=run;loadS();SAVE.forEach(i=>$('#'+i).addEventListener('change',saveS));$('#kw').addEventListener('input',saveS);$('#sur').onclick=()=>{['theme','fx','dc','case'].forEach(i=>{const s=$('#'+i);if(!s.disabled)s.value=R([...s.options]).value});saveS();go()};const rd=(id,set)=>$(id).onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{set(r.result);toast('Imagen cargada');pv(cur[0])};r.readAsDataURL(f)};rd('#ub',v=>UB=v);rd('#uw',v=>UW=v);$('#ur').onclick=()=>{UB=UW='';$('#ub').value=$('#uw').value='';pv(cur[0])};info();run();
 </script></body></html>
